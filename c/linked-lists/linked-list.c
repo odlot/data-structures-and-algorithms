@@ -10,3 +10,7 @@ int size(Node *head) {
     }
     return size;
 }
+
+bool empty(Node *head) {
+    return head == NULL;
+}
