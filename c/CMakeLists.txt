@@ -1,4 +1,4 @@
 cmake_minimum_required(VERSION 3.10)
 project(data-structures-and-algorithms-c)
 
-add_executable(data-structures-and-algorithms-c main.c)
+add_subdirectory(linked-lists)
