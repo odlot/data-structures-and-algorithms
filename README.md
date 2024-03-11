@@ -1,2 +1,3 @@
 # data-structures-and-algorithms
-Data structures and algorithms
+
+Collection of data structures and algorithms.
