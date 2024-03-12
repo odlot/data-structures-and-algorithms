@@ -1,0 +1,17 @@
+name: Ubuntu CI
+
+on:
+  push:
+    branches: ["dev"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build_and_test_c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install CMake and PKG-Config
+        run: sudo apt-get install cmake pkg-config
+      - name: Build Application
+        run: cd c && ./build.sh
